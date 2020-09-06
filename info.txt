@@ -1,0 +1,6 @@
+=================== Dependências ===================
+-- express
+-- express-handlebars
+-- bordy-parser
+-- mongoose
+
