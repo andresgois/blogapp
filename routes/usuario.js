@@ -47,7 +47,8 @@ router.post("/registro", (req, res) => {
                 const novoUsuario = new Usuario({
                     nome: req.body.nome,
                     email: req.body.email,
-                    senha: req.body.senha
+                    senha: req.body.senha,
+                    eAdmin: 1
                 })    
                 // salt -> valor aleatório para misturar com o hash
                 bcryptjs.genSalt(10, (erro, salt) => {
